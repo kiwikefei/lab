@@ -41,7 +41,7 @@ class NoteController extends Controller
             'title'     =>  'required',
             'content'   =>  'required'
         ]);
-        Note::forceCreated([
+        Note::create([
             'title'     =>  $request->get('title'),
             'content'     =>  $request->get('content'),
         ]);
